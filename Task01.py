@@ -27,3 +27,21 @@ elif num > 5:
     print('Да')
 else:
     print('Нет')
+
+
+# для первого варианта
+# if 1 <= n <= 5:
+# print('Нет')
+# elif 6 <= n <= 7:
+
+# от Николая:
+# day_number = input('Enter day number (1 - monday... 7 - sunday): ')
+
+# while day_number not in ('1','2','3','4','5','6','7') and day_number != 'q':
+#     day_number = input('Enter day number (1 - monday... 7 - sunday): ')
+
+# if day_number != 'q':    
+#     if day_number in ('6', '7'):
+#         print('weekend')    
+#     else:
+#         print('weekday')
