@@ -17,12 +17,10 @@ for i in range(-n, n+1):
 print(n_list)
 
 multiplied = 1
+# for i in index_list:
+#     if i < (index_list[len(index_list)-1]): #не работает если n<3
+#           multiplied *= n_list[i]
 for i in index_list:
-    multiplied *= n_list[i]
-
+    if i < len(n_list)-1:
+        multiplied *= n_list[i]
 print(f'Произведение элементов {index_list} из заданного списка = {multiplied}')
-
-
-# Надо сделать проверку, чтобы заданный список N был >=
-# последнему элементу из списка идексов (в файле) index_list
-# if n >= (index_list[x-1])/2:
