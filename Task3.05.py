@@ -39,3 +39,17 @@ for i in range(-n, 1):
     f1, f2 = f2, f1 - f2
     fib1.insert(0, f2)
 print(fib1)
+
+# ==========вариант с семинара=============
+def fib(n):
+    fib_list = [0]
+    x, y = 0, 1
+    for i in range(n):
+        x, y = y, x + y
+        fib_list.append(x)
+        fib_list.insert(0, -x if i %2 else x)
+    return fib_list
+
+fib_num = int(input('Input number: '))
+print(f'для k = {fib_num} список будет выглядеть так: {fib(fib_num)}')
+
