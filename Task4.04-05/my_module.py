@@ -8,7 +8,7 @@ if __name__ == "__main__":
    # ======== 4 задача=========
    #  eduation = create_equation ()
    #  print(f'Список коэффициентов: {eduation}')
-   
+
    #  str_equation = decode(eduation)
    #  print('Многочлен с заданными коэффициентами: ', str_equation)
 
@@ -64,8 +64,11 @@ dict_eq1 = encode(equation1)
 dict_eq2 = encode(equation2)
 dict_final = sum_polynomials(dict_eq1, dict_eq2)
 
+sorted_dict = dict(sorted(dict_final.items(), reverse=True))
+dict_final = sorted_dict
 str_final = decode(dict_final)
+
 print(f'Сумма многочленов => {str_final}')
 
 with open('sum_final.txt', 'w') as data:
-       data.write(str_final)
+    data.write(str_final)
