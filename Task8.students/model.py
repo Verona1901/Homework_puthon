@@ -27,7 +27,7 @@ def get_new_id():
 
 
 def save_students(student):
-    with open('Task8.students\students.csv', 'a') as file:
+    with open('Task8.students\students.csv', 'a', encoding='UTF-8') as file:
         file.write(
             f"{student['Id']};{student['Имя']};{student['Фамилия']};{student['Дата рождения']}\n")
 
